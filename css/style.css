@@ -1,3 +1,9 @@
+*,
+*:before,
+*after {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #0A090A;
     color: #fff;
@@ -24,6 +30,8 @@ body {
 
     /*inside padding top*/
     padding-top: 45px;
+
+    margin-bottom: 30%;
 }
 
 .logo {
@@ -36,7 +44,7 @@ body {
 .search {
     display: flex;
     align-items: center;
-    flex:0.8;
+    flex: 0.8;
 }
 
 .search-input {
@@ -53,7 +61,7 @@ body {
     /*delete border*/
     border: none;
     color: #AEAEAE;
-    flex:1;
+    flex: 1;
     font-size: 14px;
     line-height: 16px;
 
@@ -87,15 +95,167 @@ body {
     padding: 10px 18px;
 }
 
-.user{
+.user {
     display: flex;
     align-items: center;
 
 }
-.avatar{
+
+.avatar {
     margin-left: 20px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    object-fit:  cover;
+    object-fit: cover;
+}
+
+.title {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    line-height: 64px;
+    margin-bottom: 7px;
+}
+
+.title-en {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 23px;
+    color: #787878;
+    margin-bottom: 38px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.movie-info {
+    display: flex;
+    align-items: center;
+}
+
+.tag {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+    background: #FFF;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-right: 20px;
+}
+
+.country {
+    font-size: 16px;
+    line-height: 19px;
+    margin-right: 33px;
+}
+
+.trailer {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.trailer:before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/play.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-right: 15px;
+
+}
+
+.more {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.more:after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/play.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-left: 15px;
+    transform: rotate(90deg);
+
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 3px;
+    color: #000;
+    padding: 43px 50px;
+}
+
+.poster {
+    display: block;
+    margin-top: -75px;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #FF8F27;
+    padding: 10px 44px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+    border: none;
+
+}
+
+.actors-title {
+    padding-left: 15px;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.actors-list {
+    list-style: none;
+    padding-left: 15px;
+    text-decoration: underline;
+}
+
+.full-info {
+    flex: 0.97;
+
+}
+
+.full-content {
+    display: flex;
+}
+
+.tabs-content {
+    margin-right: 70px;
+}
+
+.tabs-item {
+    color: #000;
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: 18px;
+    line-height: 21px;
+
+
+}
+
+.tabs-item-active:hover {
+    color: #FF8F27;
 }
