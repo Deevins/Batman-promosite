@@ -11,6 +11,7 @@ body {
     background-image: url('../img/main-bg.jpg');
     background-repeat: no-repeat;
     background-position: top center;
+    background-size: 100%;
 }
 
 .container {
@@ -41,7 +42,7 @@ body {
     line-height: 28px;
 }
 
-.logo-link{
+.logo-link {
     text-decoration: none;
     color: #FFF;
 
@@ -209,12 +210,16 @@ body {
     background-color: #fff;
     border-radius: 3px;
     color: #000;
-    padding: 43px 50px;
+    padding: 3% 4%;
+}
+
+.short-info{
+    margin-right: 3%;
 }
 
 .poster {
     display: block;
-    margin-top: -75px;
+    margin-top: -40%;
     margin-bottom: 20px;
 }
 
@@ -241,6 +246,7 @@ body {
     padding-left: 15px;
     text-decoration: underline;
     cursor: pointer;
+    line-height: 150%;
 }
 
 .full-info {
@@ -253,19 +259,172 @@ body {
 }
 
 .tabs-content {
-    margin-right: 70px;
+    margin-right: 4%;
 }
 
+.tabs{
+    display: flex;
+    align-items: center;
+    margin-bottom: 4%;
+}
 .tabs-item {
     color: #000;
     text-decoration: none;
-    margin-right: 40px;
     font-size: 18px;
     line-height: 21px;
 
 
 }
+.tabs-item:not(:last-child){
+    margin-right: 40px;
+}
 
 .tabs-item-active:hover {
     color: #FF8F27;
+}
+
+.text {
+font-size: 16px;
+line-height: 140%;
+margin-top: 0;
+
+}
+
+.subscribe-title{
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 160%;
+    margin-bottom: 14px;
+    margin-top: 0;
+}
+.subscribe-form{
+    display: flex;
+    margin-bottom: 48px;
+}
+.subscribe-input{
+    background: rgba(196, 196, 196, 0.5);
+    border-radius: 5px 0px 0px 5px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border: none; 
+    color: #AEAEAE;
+    font-size: 14px;
+    line-height: 16px;
+    outline-style: none;
+}
+
+.subscribe-button{
+    background-color: #FF8F27;
+    border-radius: 0px 5px 5px 0px;
+    border:none;
+    padding: 12px;
+}
+
+
+
+@media(max-width:1200px) {
+    body {
+        background-size: auto;
+    }
+    .container{
+        max-width: 960px;
+    }
+    .tabs-item{
+        font-size: 16px;
+    }
+    .tabs {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media(max-width: 992px){
+    .container{
+        max-width: 750px;
+    }
+    .tabs {
+        flex-wrap: wrap;
+    }
+    .tabs-item {
+        flex-basis: 20%;
+        line-height: 2;
+    }
+    .full-content{
+        flex-wrap: wrap;
+
+    }
+    .tabs-content{
+        margin-bottom: 5%;
+    }
+    .tabs-item{
+        flex-basis: 33%;
+    }
+    .text{
+        font-size: 14px;
+    }
+
+}
+
+@media(max-width:768px){
+    .container{
+        max-width: 540px;
+    }
+    .more{
+        display: none;
+    }
+    .tabs-item {
+        flex-basis: 33%;
+    }
+    .tabs-content{
+        margin-right: 0;
+    }
+
+
+}
+
+@media(max-width:578px){
+    .container{
+        width: 90%;
+    }
+    .header{
+        flex-wrap:wrap;
+    }
+    .search{
+        flex-basis: 100%;
+        order:3;
+        margin-top: 5%;
+    }
+    .content{
+        flex-wrap: wrap;
+    }
+    .short-info{
+        margin-bottom: 5%;
+    }
+    .actors-list,.actors-title{
+        display: none;
+    }
+
+    .movie-info{
+        flex-wrap: wrap;
+    }
+
+    .play{
+        flex-basis: 100%;
+        margin-top: 10%;
+    }
+    .short-info{
+        margin-right: 0;
+    }
+    .button{
+        width: 100%;
+    }
+
+    .poster{
+        margin-top: -20%;
+        display: inline-block;
+        width:100%;
+    }
+
 }
