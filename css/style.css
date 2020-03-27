@@ -260,6 +260,10 @@ body {
 
 .tabs-content {
     margin-right: 4%;
+    display:none;
+}
+.visible{
+    display: block;
 }
 
 .tabs{
@@ -279,7 +283,7 @@ body {
     margin-right: 40px;
 }
 
-.tabs-item-active:hover {
+.tabs-item-active {
     color: #FF8F27;
 }
 
